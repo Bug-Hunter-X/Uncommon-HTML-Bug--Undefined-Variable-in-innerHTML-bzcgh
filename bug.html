@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not be shown correctly if the script fails.
+  </div>
+  <script>
+    // Incorrect way to use innerHTML with a variable that might be undefined
+    let myVar;
+    document.getElementById("myDiv").innerHTML = myVar;
+  </script>
+</body>
+</html>
