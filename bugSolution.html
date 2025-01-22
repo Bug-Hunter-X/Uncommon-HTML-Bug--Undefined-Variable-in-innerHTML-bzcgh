@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be shown correctly.
+  </div>
+  <script>
+    let myVar = "This text is now defined.";
+    //Correct way to handle potential undefined variables
+    document.getElementById("myDiv").innerHTML = myVar || "Default text";
+  </script>
+</body>
+</html>
